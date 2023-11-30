@@ -4,6 +4,36 @@
     <style>
     h1 {text-align: center;}
     h2 {text-align: center;}
+
+    div.gallery{
+                margin: 5px;
+                border: 1px solid #0e0000;
+                width: 100%;
+    }
+    
+
+    div.column{
+        float:left;
+        width: 49%;
+        padding: 5px;
+    }
+    div.row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    div.gallery:hover{
+        border: 1px solid #777;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
     </style>
 
     <meta charset="utf-8">
@@ -75,6 +105,43 @@
         <h4>Finley Walden</h4><p>
         2D Animations, SCRUM Master
         </body>
+    </div>
+
+    <h2>Screenshots</h2>
+    <div class="row">
+    <div class = "column">
+        <div class="gallery">
+            <body>
+            <a target="_blank" href="img1.png";>
+                <img src="img1.png" alt="menu">
+            </a>
+            <dic class="desc">Main Menu</dic>
+            </body>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img2.png";>
+                <img src="img2.png" alt="2dsim">
+            </a>
+            <dic class="desc">2D Simulation</dic>
+        </div>
+    </div>
+    <div class="column">
+        <div class="gallery">
+            <a target="_blank" href="img3.png";>
+                <img src="img3.png" alt="3dsim">
+            </a>
+            <dic class="desc">3D Simulation</dic>
+        </div>
+    
+
+        <div class="gallery">
+            <a target="_blank" href="img4.png";>
+                <img src="img4.png" alt="quiz">
+            </a>
+            <dic class="desc">Quiz Screen</dic>
+        </div>
+    </div>
     </div>
     
     </div class="repos-and-links">
